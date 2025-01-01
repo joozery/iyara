@@ -1,0 +1,120 @@
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6); /* ปรับสีพื้นหลังเข้มขึ้นเล็กน้อย */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-family: 'Prompt', sans-serif; /* เพิ่มฟอนต์ Prompt */
+  }
+  
+  /* Popup Container */
+  .popup-container {
+    background: white;
+    padding: 30px; /* เพิ่ม padding */
+    border-radius: 12px; /* เพิ่มความโค้งมน */
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    animation: popup-fade-in 0.3s ease; /* เพิ่มแอนิเมชัน */
+    font-family: 'Prompt', sans-serif; /* เพิ่มฟอนต์ Prompt */
+  }
+  
+  /* Animation */
+  @keyframes popup-fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* ปุ่มปิด */
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #d32f2f; /* ปรับสีปุ่ม */
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-family: 'Prompt', sans-serif; /* เพิ่มฟอนต์ Prompt */
+  }
+  
+  .close-button:hover {
+    transform: scale(1.2); /* ขยายเล็กน้อยเมื่อ hover */
+  }
+  
+  /* Header โลโก้ */
+  .logo-header img {
+    width: 200px;
+    margin-bottom: 20px;
+    animation: fade-in 0.5s ease; /* เพิ่มแอนิเมชัน */
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px; /* เพิ่มความโค้ง */
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif; /* เพิ่มฟอนต์ Prompt */
+  }
+  
+  input:focus {
+    border-color: #d32f2f; /* เปลี่ยนสีเมื่อ focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.5); /* เพิ่มแสงรอบๆ */
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    font-family: 'Prompt', sans-serif; /* เพิ่มฟอนต์ Prompt */
+  }
+  
+  .submit-button:hover {
+    background: #b71c1c;
+    transform: translateY(-2px); /* เพิ่มการขยับเล็กน้อย */
+    font-family: 'Prompt', sans-serif; /* เพิ่มฟอนต์ Prompt */
+  }
+  
+  /* เพิ่มข้อความด้านล่าง */
+  .popup-container .footer-text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    font-family: 'Prompt', sans-serif; /* เพิ่มฟอนต์ Prompt */
+  }

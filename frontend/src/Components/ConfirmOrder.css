@@ -1,0 +1,21 @@
+.confirm-order-container {
+    font-family: 'Prompt', sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .qr-code-container {
+    margin: 20px 0;
+  }
+  
+  .qr-code {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }

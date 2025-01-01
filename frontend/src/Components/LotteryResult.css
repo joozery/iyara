@@ -1,0 +1,157 @@
+.lottery-result-container {
+    font-family: 'Prompt', sans-serif;
+    max-width: 900px;
+    margin: 100px auto; /* จัดให้อยู่ตรงกลางแนวนอน */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-direction: column; /* จัดเรียงแนวตั้ง */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    min-height: 100vh; /* ใช้ความสูงเต็มจอ */
+    background-color: #f5f5f5; /* เพิ่มพื้นหลัง */
+    padding: 20px;
+  }
+  
+  .lottery-header {
+    text-align: center;
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .lottery-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .select-round {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .result-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .result-section h2 {
+    color: #d32f2f;
+    font-size: 1.5rem;
+  }
+  
+  .result-section .main-prize {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-prize h1 {
+    font-size: 3rem;
+    color: #d32f2f;
+  }
+  
+  .secondary-prizes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .prize-group {
+    text-align: center;
+  }
+  
+  .additional-prizes {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .other-prizes {
+    margin-top: 20px;
+  }
+  
+  .other-prizes h3 {
+    color: #d32f2f;
+    text-align: center;
+  }
+  
+  .other-prizes p {
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    border-color: #d32f2f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.5);
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: #b71c1c;
+    transform: translateY(-2px);
+  }
+  /* Body ของหน้าตรวจรางวัล */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    min-height: 100vh; /* ใช้ความสูงเต็มหน้าจอ */
+    background-color: #f5f5f5; /* สีพื้นหลัง */
+}
+
+/* Container หลัก */
+.lottery-result-container {
+    max-width: 900px;
+    width: 100%; /* ให้ยืดเต็มพื้นที่ที่กำหนด */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    padding: 20px;
+    margin: 20px; /* เพิ่มระยะห่างรอบนอก */
+}
