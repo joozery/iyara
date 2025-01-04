@@ -6,6 +6,7 @@ import LotteryResult from "./components/LotteryResult";
 import Cart from "./components/Cart";
 import ConfirmOrder from "./components/ConfirmOrder";
 import Dashboard from "./components/admin/Dashboard"; // Import หน้า Dashboard
+import Footer from "./components/Footer"; // Import Footer
 
 const App = () => {
   const [cart, setCart] = useState([]);
@@ -31,6 +32,7 @@ const App = () => {
       <>
         {!isAdmin && <Navbar cart={cart} />} {/* แสดง Navbar เฉพาะเมื่อไม่ใช่หน้า admin */}
         {children}
+        <Footer /> {/* Footer จะแสดงทุกหน้า */}
       </>
     );
   };
