@@ -7,6 +7,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
   }
   
   .qr-code-container {
@@ -18,4 +20,24 @@
     height: 200px;
     border: 2px solid #ddd;
     border-radius: 8px;
+  }
+  .upload-container {
+    margin-top: 20px;
+  }
+  
+  .upload-input {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  .uploaded-image-container {
+    margin-top: 20px;
+  }
+  
+  .uploaded-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }

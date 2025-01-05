@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ดันให้ Layout มีความสูงเท่ากับ viewport */
+}
+
+.main-content {
+  flex: 1; /* ให้เนื้อหาหลักยืดหยุ่นและดัน Footer ลงล่าง */
+}
+

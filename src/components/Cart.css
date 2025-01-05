@@ -1,5 +1,5 @@
 .cart-container {
-    width: 100vh;
+    width: 100%; /* ความกว้างเต็มหน้าจอ */
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -7,7 +7,9 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Prompt', sans-serif;
-}
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }  
 
 h2 {
     color: #d32f2f;

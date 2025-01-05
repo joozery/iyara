@@ -1,23 +1,33 @@
+/* สำหรับ Footer ทั้งหมด */
 .footer {
-    background-color: #770000FA; /* สีเขียวเข้ม */
+    background-color: #770000FA; /* สีแดงเข้ม */
     color: white;
     padding: 20px 0;
+    width: 100%; /* ทำให้ Footer กว้างเต็มหน้าจอ */
+    box-sizing: border-box; /* รวม padding ไว้ใน width */
     text-align: center;
+    font-family: 'Prompt', sans-serif;
   }
   
+  /* สำหรับการจัดเรียงภายใน Footer */
   .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    padding: 0 20px; /* เพิ่ม padding ด้านซ้าย-ขวา */
   }
   
-  .footer-left, .footer-center, .footer-right {
+  /* ส่วนย่อยใน Footer */
+  .footer-left,
+  .footer-center,
+  .footer-right {
     flex: 1;
+    text-align: center;
   }
   
+  /* ลิงก์ใน Footer */
   .footer-right a {
     color: white;
     text-decoration: none;
@@ -28,14 +38,26 @@
     text-decoration: underline;
   }
   
+  /* ปรับสำหรับหน้าจอขนาดเล็ก */
   @media (max-width: 768px) {
     .footer-container {
-      flex-direction: column;
+      flex-direction: column; /* เปลี่ยนเป็นแนวตั้ง */
       text-align: center;
     }
   
-    .footer-left, .footer-center, .footer-right {
-      margin-bottom: 10px;
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างส่วน */
     }
+  }
+  .footer {
+    background-color: #770000FA; /* สีแดงเข้ม */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100vw; /* ให้ Footer ครอบคลุมความกว้างของ viewport */
+    box-sizing: border-box;
   }
   

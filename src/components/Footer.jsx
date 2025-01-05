@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // ไฟล์ CSS สำหรับ Footer
+import './Footer.css'; // ตรวจสอบว่าเส้นทางไฟล์ถูกต้อง
 
 const Footer = () => {
   return (

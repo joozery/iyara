@@ -133,25 +133,35 @@
     transform: translateY(-2px);
   }
   /* Body ของหน้าตรวจรางวัล */
-body {
-    margin: 0;
-    padding: 0;
+  .lottery-result-container {
+    max-width: 800px; /* ความกว้างสูงสุดของเนื้อหา */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลางแนวนอน */
+    padding: 20px;
+    background-color: #ffffff; /* สีพื้นหลัง */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Prompt', sans-serif;
+  }
+  
+  .lottery-result-container {
+    max-width: 800px; /* ความกว้างสูงสุดของเนื้อหา */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลางแนวนอน */
+    padding: 20px;
+    background-color: #ffffff; /* สีพื้นหลัง */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Prompt', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  /* จัดตำแหน่งให้อยู่ตรงกลางหน้าจอ */
+  body {
     display: flex;
     justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
     align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
-    min-height: 100vh; /* ใช้ความสูงเต็มหน้าจอ */
-    background-color: #f5f5f5; /* สีพื้นหลัง */
-}
-
-/* Container หลัก */
-.lottery-result-container {
-    max-width: 900px;
-    width: 100%; /* ให้ยืดเต็มพื้นที่ที่กำหนด */
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
-    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
-    padding: 20px;
-    margin: 20px; /* เพิ่มระยะห่างรอบนอก */
-}
+    min-height: 100vh; /* ความสูงขั้นต่ำเต็มหน้าจอ */
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+    margin: 0;
+  }
+  
