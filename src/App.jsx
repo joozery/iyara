@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import LotteryResult from "./components/LotteryResult";
 import Cart from "./components/Cart";
 import ConfirmOrder from "./components/ConfirmOrder";
-import Dashboard from "./components/admin/Dashboard"; // Import หน้า Dashboard
-import Footer from "./components/Footer"; // Import Footer
+import MainDashboard from "./components/Dashboard/MainDashboard/MainDashboard";
 
 const App = () => {
   const [cart, setCart] = useState([]);
@@ -23,31 +23,31 @@ const App = () => {
     setCart(cart.filter((item) => item !== number));
   };
 
-  // Component for Conditional Rendering
   const Layout = ({ children }) => {
     const location = useLocation();
-    const isAdmin = location.pathname.startsWith("/admin"); // ตรวจสอบเส้นทางที่เริ่มต้นด้วย /admin
+    const isDashboard = location.pathname.startsWith("/dashboard");
 
     return (
       <>
-        {!isAdmin && <Navbar cart={cart} />} {/* แสดง Navbar เฉพาะเมื่อไม่ใช่หน้า admin */}
-        {children}
-        <Footer /> {/* Footer จะแสดงทุกหน้า */}
+        {!isDashboard && <Navbar cart={cart} />}
+        <div style={{ flex: 1 }}>{children}</div>
+        {!isDashboard && <Footer />}
       </>
     );
   };
 
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<HomePage addToCart={addToCart} />} />
-          <Route path="/prizes" element={<LotteryResult />} />
-          <Route path="/cart" element={<Cart cart={cart} onRemove={removeFromCart} />} />
-          <Route path="/confirm" element={<ConfirmOrder />} />
-          <Route path="/admin/*" element={<Dashboard />} /> {/* เส้นทางสำหรับหน้า Dashboard */}
-        </Routes>
-      </Layout>
+      <Routes>
+        {/* เส้นทางสำหรับ User */}
+        <Route path="/" element={<Layout><HomePage addToCart={addToCart} /></Layout>} />
+        <Route path="/prizes" element={<Layout><LotteryResult /></Layout>} />
+        <Route path="/cart" element={<Layout><Cart cart={cart} onRemove={removeFromCart} /></Layout>} />
+        <Route path="/confirm" element={<Layout><ConfirmOrder /></Layout>} />
+
+        {/* เส้นทางสำหรับ Dashboard */}
+        <Route path="/dashboard/*" element={<MainDashboard />} />
+      </Routes>
     </Router>
   );
 };

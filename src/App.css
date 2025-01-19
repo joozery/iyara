@@ -50,3 +50,18 @@
   flex: 1; /* ให้เนื้อหาหลักยืดหยุ่นและดัน Footer ลงล่าง */
 }
 
+/* Root */
+#root {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh; /* ความสูงเต็มจอ */
+  display: flex; /* ใช้ Flexbox สำหรับจัดวาง */
+  background-color: #f8f9fa; /* พื้นหลังหลัก */
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex: 1;
+  width: 100%; /* ใช้ความกว้างเต็มจอ */
+}

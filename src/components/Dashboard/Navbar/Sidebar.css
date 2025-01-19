@@ -1,0 +1,99 @@
+.sidebar {
+  font-family: 'Prompt', sans-serif; /* ใช้ฟอนต์ Prompt */
+  width: 260px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e0e0e0; /* เพิ่มเส้นขอบ */
+}
+
+.sidebar-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: #4a5568;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.nav-item.active {
+  background-color: #1a202c; /* พื้นหลังสีดำ */
+  color: #ffffff; /* ข้อความสีขาว */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #ff5722; /* เพิ่มแถบสีส้มที่ขอบซ้าย */
+}
+
+.nav-item:hover {
+  background-color: #2d3748;
+  color: #ffffff;
+}
+
+.icon {
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.auth-pages-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #718096;
+  text-transform: uppercase;
+}
+
+.sidebar-logo {
+  width: 100%; /* ปรับขนาดโลโก้ */
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  border-radius: 8px; /* เพิ่มมุมโค้งหากต้องการ */
+}
+
+a {
+  text-decoration: none; /* ลบขีดเส้นใต้ */
+  color: inherit; /* ใช้สีจากพาเรนต์ */
+}
+
+a:hover {
+  text-decoration: none; /* ยืนยันว่าไม่มีขีดเส้นใต้เมื่อโฮเวอร์ */
+}
+.full-dashboard-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.full-dashboard-image img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 8px;
+}

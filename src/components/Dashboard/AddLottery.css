@@ -1,0 +1,130 @@
+/* ฟอนต์หลัก */
+body {
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* ส่วนคอนเทนเนอร์ */
+.add-lottery-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 1200px;
+    margin: auto;
+    height: 700px;
+}
+
+/* ส่วนอินพุต */
+.lottery-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.lottery-input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.lottery-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* ปุ่มเพิ่มหวย */
+.add-lottery-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.add-lottery-button:hover {
+    background-color: #0056b3;
+}
+
+/* ส่วนรายการหวย */
+.lottery-list {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* ตาราง */
+.lottery-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lottery-table th,
+.lottery-table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.lottery-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.lottery-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ปุ่มลบ */
+.delete-button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* ScrollBar Style */
+.lottery-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lottery-list::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.lottery-list::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* หัวข้อใหญ่ */
+.add-lottery-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #080a0c;
+    margin-bottom: 20px;
+}

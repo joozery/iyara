@@ -1,0 +1,40 @@
+.main-dashboard {
+  padding: 20px;
+  background-color: #f4f4f4;
+  width: 1200px;
+  height: auto;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.charts {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.chart {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+  overflow: auto; /* ทำให้เลื่อนเนื้อหาได้ */
+  width: 100%;
+}

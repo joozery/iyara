@@ -1,0 +1,21 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex: 1;
+  }
+  body {
+    min-height: 100vh; /* ให้ body มีความสูงอย่างน้อยเท่ากับความสูงของหน้าจอ */
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif; /* ใช้ฟอนต์ Prompt */
+    background-color: #f8f9fa; /* พื้นหลังที่อ่อนเพื่อให้ดูสะอาดตา */
+    display: flex;
+    flex-direction: column;
+  }
+  

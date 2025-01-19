@@ -1,0 +1,127 @@
+/* ฟอนต์หลัก */
+body {
+    font-family: 'Prompt', sans-serif; /* ฟอนต์ภาษาไทย */
+    font-size: 16px; /* ขนาดตัวหนังสือทั่วไป */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* พื้นหลังหน้าเว็บ */
+  }
+  
+  /* หัวข้อใหญ่ */
+  .user-management-container h1 {
+    font-size: 2rem; /* ปรับขนาดตัวหนังสือของหัวข้อ */
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* คอนเทนเนอร์หลัก */
+  .user-management-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เงาบริเวณคอนเทนเนอร์ */
+  }
+  
+  /* ช่องค้นหา */
+  .search-container {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  .search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem; /* ขนาดตัวหนังสือในช่องค้นหา */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* ส่วนตารางผู้ใช้งาน */
+  .user-table-container {
+    margin-top: 20px;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 12px 15px; /* การเว้นระยะในตาราง */
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem; /* ขนาดตัวหนังสือในตาราง */
+  }
+  
+  .user-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    font-size: 1.1rem; /* ขนาดตัวหนังสือหัวตาราง */
+  }
+  
+  /* สถานะของผู้ใช้งาน */
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9rem; /* ขนาดตัวหนังสือในสถานะ */
+  }
+  
+  .status.active {
+    background-color: #4caf50; /* สีเขียวสำหรับ Active */
+  }
+  
+  .status.deactivated {
+    background-color: #ff9800; /* สีส้มสำหรับ Deactivated */
+  }
+  
+  .status.deleted {
+    background-color: #f44336; /* สีแดงสำหรับ Deleted */
+  }
+  
+  /* ปุ่มแสดงการกระทำ */
+  .action-button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem; /* ขนาดตัวหนังสือในปุ่ม */
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* สำหรับการตอบสนองบนอุปกรณ์ที่มีขนาดหน้าจอเล็ก */
+  @media (max-width: 768px) {
+    .user-management-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .user-table th,
+    .user-table td {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .search-input {
+      width: 200px;
+    }
+  
+    .user-table-container {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+  }
+  
