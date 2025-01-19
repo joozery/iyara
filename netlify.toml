@@ -1,9 +1,4 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
-  node_version = "14"  # รูปแบบถูกต้องโดยไม่มีคอมม่าที่เกินหรือค่าที่หายไป
-
-[[redirects]]
-  from = "/old-page"
-  to = "/new-page"
-  status = 301
+command = "npm run build"
+publish = "dist"
+node_version = "14"  # ตรวจสอบให้แน่ใจว่าไม่มีเครื่องหมายคอมม่าที่เกินหรือตัวเลขที่หายไป
