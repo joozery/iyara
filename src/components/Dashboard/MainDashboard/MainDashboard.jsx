@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Sidebar from "../Navbar/navbar"; // เส้นทางนี้ตรงกับโครงสร้างโฟลเดอร์
+import Sidebar from "../Navbar/Sidebar"; // เส้นทางนี้ตรงกับโครงสร้างโฟลเดอร์
 import AddLottery from "../AddLottery";
 import TeamManagement from "../TeamManagement";
 import UserManagement from "../UserManagement";
