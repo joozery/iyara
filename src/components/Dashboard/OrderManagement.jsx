@@ -1,89 +1,53 @@
 import React, { useState } from "react";
-import "./OrderManagement.css"; // Add your custom styling here
+import "./OrderManagement.css"; // เพิ่มการตั้งค่าของคุณที่นี่
 
 const OrderManagement = () => {
-  // Sample data for orders (you can replace this with real data or fetch from an API)
+  // ข้อมูลตัวอย่างการซื้อหวย (คุณสามารถแทนที่ข้อมูลนี้ด้วยข้อมูลจริงหรือดึงจาก API)
   const [orders] = useState([
     {
       orderId: "05sgvy5",
-      store: "The Wos Cafe Mg",
-      method: "Pickup",
-      timeSlot: "Immediately",
-      created: "Date: 11 Jul 2023, Time: 08:37 PM",
-      lastStatus: "New Order",
+      lotteryNumber: "123456",
+      purchaseMethod: "ผ่านแอป",
+      timeSlot: "ตอนนี้",
+      created: "วันที่: 11 ก.ค. 2023, เวลา: 08:37 PM",
+      lastStatus: "ซื้อสำเร็จ",
       statusColor: "green",
     },
     {
       orderId: "mwwjmw",
-      store: "Dev Test Restaurant",
-      method: "Pickup",
-      timeSlot: "Immediately",
-      created: "Date: 12 Jun 2023, Time: 06:23 PM",
-      lastStatus: "Accepted by Restaurant",
+      lotteryNumber: "654321",
+      purchaseMethod: "ผ่านเว็บไซต์",
+      timeSlot: "ตอนนี้",
+      created: "วันที่: 12 มิ.ย. 2023, เวลา: 06:23 PM",
+      lastStatus: "รอดำเนินการ",
       statusColor: "orange",
     },
     {
       orderId: "g97rx5",
-      store: "Dev Test Restaurant",
-      method: "Delivery",
-      timeSlot: "Immediately",
-      created: "Date: 09 Jun 2023, Time: 03:02 PM",
-      lastStatus: "New Order",
+      lotteryNumber: "987654",
+      purchaseMethod: "ผ่านแอป",
+      timeSlot: "ตอนนี้",
+      created: "วันที่: 09 มิ.ย. 2023, เวลา: 03:02 PM",
+      lastStatus: "ซื้อสำเร็จ",
       statusColor: "green",
     },
     {
       orderId: "nwl4n5",
-      store: "Dev Test Restaurant",
-      method: "Delivery",
-      timeSlot: "Immediately",
-      created: "Date: 31 May 2023, Time: 11:53 AM",
-      lastStatus: "Accepted by Restaurant",
-      statusColor: "orange",
+      lotteryNumber: "112233",
+      purchaseMethod: "ผ่านเว็บไซต์",
+      timeSlot: "ตอนนี้",
+      created: "วันที่: 31 พ.ค. 2023, เวลา: 11:53 AM",
+      lastStatus: "ยกเลิก",
+      statusColor: "red",
     },
     {
       orderId: "ywm875",
-      store: "Dev Test Restaurant",
-      method: "Delivery",
-      timeSlot: "Immediately",
-      created: "Date: 20 May 2023, Time: 08:53 AM",
-      lastStatus: "Prepared",
-      statusColor: "red",
-    },
-    {
-      orderId: "8562mw",
-      store: "The Wos Cafe Mg",
-      method: "Pickup",
-      timeSlot: "Immediately",
-      created: "Date: 19 May 2023, Time: 08:53 AM",
-      lastStatus: "Prepared",
-      statusColor: "red",
-    },
-    {
-      orderId: "35pd25",
-      store: "Dev Test Restaurant",
-      method: "Delivery",
-      timeSlot: "Immediately",
-      created: "Date: 19 May 2023, Time: 03:33 PM",
-      lastStatus: "Rejected by Store",
-      statusColor: "gray",
-    },
-    {
-      orderId: "Iwi29",
-      store: "Dev Test Restaurant",
-      method: "Delivery",
-      timeSlot: "Immediately",
-      created: "Date: 19 May 2023, Time: 07:06 PM",
-      lastStatus: "Accepted by Restaurant",
-      statusColor: "orange",
-    },
-    {
-      orderId: "Iwi29",
-      store: "Dev Test Restaurant",
-      method: "Delivery",
-      timeSlot: "Immediately",
-      created: "Date: 19 May 2023, Time: 07:06 PM",
-      lastStatus: "Accepted by Restaurant",
-      statusColor: "orange",
+      lotteryNumber: "223344",
+      purchaseMethod: "ผ่านแอป",
+      timeSlot: "ตอนนี้",
+      created: "วันที่: 20 พ.ค. 2023, เวลา: 08:53 AM",
+      lastStatus: "ซื้อสำเร็จ",
+      statusColor: "green",
     },
   ]);
 
@@ -95,19 +59,19 @@ const OrderManagement = () => {
           <thead>
             <tr>
               <th>Order ID</th>
-              <th>Username</th>
               <th>เลขหวยที่ซื้อ</th>
-              <th>Time Slot</th>
+              <th>วิธีการซื้อ</th>
+              <th>เวลา</th>
               <th>วันที่ทำรายการซื้อ</th>
-              <th>สถานนะ</th>
+              <th>สถานะ</th>
             </tr>
           </thead>
           <tbody>
             {orders.map((order, index) => (
               <tr key={index}>
                 <td>{order.orderId}</td>
-                <td>{order.store}</td>
-                <td>{order.method}</td>
+                <td>{order.lotteryNumber}</td>
+                <td>{order.purchaseMethod}</td>
                 <td>{order.timeSlot}</td>
                 <td>{order.created}</td>
                 <td>
