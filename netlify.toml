@@ -1,4 +1,3 @@
 [build]
-command = "npm run build"
-publish = "dist"
-node_version = "14"  # ตรวจสอบให้แน่ใจว่าไม่มีเครื่องหมายคอมม่าที่เกินหรือตัวเลขที่หายไป
+  command = "npm run build"  # คำสั่งการสร้างโปรเจค
+  publish = "build"  # โฟลเดอร์ที่เก็บไฟล์หลังการสร้างเสร็จ
