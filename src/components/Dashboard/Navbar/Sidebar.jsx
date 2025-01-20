@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaHome, FaPlus, FaUsers, FaUserCog, FaClipboardCheck, FaShoppingCart, FaSignInAlt, FaUserPlus } from "react-icons/fa";
-import "./sidebar.css";
+import './Sidebar.css';  // ตรวจสอบเส้นทางให้ตรงกับตำแหน่งของไฟล์
 import Logo from "../../../assets/full-woo-logo.webp";
 import FullDashboardImage from "../../../assets/illustration-dashboard.webp";
 
